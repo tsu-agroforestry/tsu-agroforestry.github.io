@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Lora", Georgia, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-canopy-950: #0E261E;
+  --color-canopy-900: #16382C;
+  --color-canopy-800: #1E4D3B;
+  --color-canopy-700: #28624B;
+  --color-canopy-600: #357A5E;
+  --color-canopy-100: #E6F0EB;
+  --color-canopy-50: #F2F7F4;
+
+  --color-earth-600: #A9721B;
+  --color-earth-500: #C48B28;
+  --color-earth-400: #DCA442;
+  --color-earth-100: #FBF4E6;
+
+  --color-parchment: #F8F9F6;
+  --color-ink: #18241F;
+  --color-muted: #4E5E57;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background-color: var(--color-parchment);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Subtle organic grain overlay for hero sections */
+.hero-vignette {
+  background: linear-gradient(
+    180deg,
+    rgba(14, 38, 30, 0.72) 0%,
+    rgba(14, 38, 30, 0.56) 50%,
+    rgba(14, 38, 30, 0.86) 100%
+  );
+}
