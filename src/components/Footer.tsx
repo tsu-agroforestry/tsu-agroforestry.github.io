@@ -1,6 +1,6 @@
-import { ExternalLink, Mail, MapPin, Phone, Trees } from 'lucide-react'
+import { ExternalLink, Mail, MapPin, Phone } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { siteInfo } from '../data/site'
+import { assetUrl, siteInfo } from '../data/site'
 
 const quickLinks = [
   { to: '/research', label: 'Ongoing Research' },
@@ -25,10 +25,12 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-12">
           {/* Brand Column */}
           <div className="lg:col-span-5">
-            <Link to="/" className="inline-flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-[#DCA442] ring-1 ring-white/15">
-                <Trees className="h-5 w-5" aria-hidden="true" />
-              </span>
+            <Link to="/" className="inline-flex items-center gap-3.5">
+              <img
+                src={assetUrl('images/lab-logo.png')}
+                alt="TSU Agroforestry Lab Seal"
+                className="h-13 w-13 shrink-0 rounded-full object-contain ring-1 ring-white/20"
+              />
               <div>
                 <div className="font-serif text-lg font-semibold text-white">
                   {siteInfo.fullName}

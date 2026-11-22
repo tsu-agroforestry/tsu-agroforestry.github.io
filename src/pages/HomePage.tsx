@@ -28,7 +28,7 @@ export function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative flex min-h-[84vh] items-center overflow-hidden bg-[#0E261E] pt-20">
+      <section className="relative flex min-h-[72vh] items-center overflow-hidden bg-[#0E261E]">
         <img
           src={assetUrl(siteInfo.heroImage)}
           alt="Evergreen woodland shoreline representing Tennessee agroforestry and forest ecosystems"

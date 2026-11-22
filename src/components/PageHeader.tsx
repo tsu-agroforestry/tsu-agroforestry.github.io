@@ -14,7 +14,7 @@ export function PageHeader({
   backgroundImage = siteInfo.heroImage,
 }: PageHeaderProps) {
   return (
-    <section className="relative overflow-hidden bg-[#16382C] pt-28 pb-16 text-white sm:pt-32 sm:pb-20">
+    <section className="relative overflow-hidden bg-[#16382C] py-14 text-white sm:py-16">
       <img
         src={assetUrl(backgroundImage)}
         alt=""
